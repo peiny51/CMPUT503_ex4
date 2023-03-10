@@ -119,7 +119,7 @@ class RobotFollowerNode(DTROS):
             self.pub_car_cmd.publish(car_control_msg)
 
 if __name__ == '__main__':
-    node = RobotFollowerNode   (node_name='robot_follower_node')
+    node = RobotFollowerNode(node_name='robot_follower_node')
     # Keep it spinning to keep the node alive
     # main loop
     rospy.spin()
